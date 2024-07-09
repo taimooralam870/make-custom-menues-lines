@@ -1,0 +1,262 @@
+<style>
+    @font-face {
+      font-family: 'Courier';
+      src: url('https://cdn.shopify.com/s/files/1/0835/4522/7601/files/Courier.ttc?v=1719580882');
+  }
+   @font-face {
+      font-family: 'bodonibold';
+      src: url('https://cdn.shopify.com/s/files/1/0835/4522/7601/files/Bodoni_SvtyTwo_ITC_TT_Bold.ttf?v=1720134106');
+  }
+  @font-face {
+      font-family: 'BodoniURW-Med';
+      src: url('https://cdn.shopify.com/s/files/1/0835/4522/7601/files/URW_Bodoni_T_Medium.TTF?v=1720137180');
+  }
+  
+      @font-face {
+      font-family: 'Acumin';
+      src: url('https://cdn.shopify.com/s/files/1/0835/4522/7601/files/AcuminVariableConcept.otf?v=1719580881');
+  }
+      @font-face {
+      font-family: 'courier';
+      src: url('https://cdn.shopify.com/s/files/1/0835/4522/7601/files/Courier_New.ttf?v=1719580880');
+  }
+      @font-face {
+      font-family: 'bodoni';
+      src: url('https://cdn.shopify.com/s/files/1/0835/4522/7601/files/Bodoni_72.ttc?v=1719580879');
+  }
+      @font-face {
+      font-family: 'joulita';
+      src: url('https://cdn.shopify.com/s/files/1/0835/4522/7601/files/Julietta-Messie-Demo.ttf?v=1719580878');
+  }
+  .leter{
+     letter-spacing: 4.6px;
+  }
+</style>
+{% render "header-drawer" %}
+<section class=" fixed w-full bg-white  px-4  " style="font-family: 'bodoni';">
+  <div class="max-w-[1061px] mx-auto">
+    <div class="flex items-center justify-end md:px-120] sm:pr-10  md:pr-10 pr-40 gap-[13px] md:text-[14px] text-[12px] ">
+      <div class="leter" style=" font-family: 'bodoni';"><i>De wienkelkarre</i></div>
+      <a href="https://6bdd90-bd.myshopify.com/cart">
+        <div class="relative  w-[32px]">
+          <img class="w-[32px]" src="{{ section.settings.img | img_url: '2000x' }}">
+          <div class="absolute bottom-8  font-bold rounded-full h-6 w-6 !flex items-center  px-4 left-8  !block">
+            <div class="rounded-full text-[12px] !block !flex !items-center justify-center text-white bg-black"></div>
+            {{ cart.item_count }}
+          </div> 
+        </div>
+      </a>
+
+      <a href="https://6bdd90-bd.myshopify.com/account/login">
+        <div class="">
+          <img class="w-[33px]" src="{{ section.settings.img2 | img_url: '2000x' }}">
+        </div>
+      </a>
+
+      <a href="https://6bdd90-bd.myshopify.com/account/login"><div style=" font-bold font-family: 'bodoni';">Log in</div></a>
+    </div>
+    <a href="https://6bdd90-bd.myshopify.com/">
+      <div class="flex items-center justify-center">
+        <img class="md:w-[300px] w-[200px]" src="{{ section.settings.img3 | img_url: '2000x' }}">
+      </div>
+    </a>
+  </div>
+  <div
+    class="parent linklist leter flex justify-center items-center gap-[20px] py-[20px] text-[14px] font-bold"
+    style="  font-family: 'bodoni';"
+  >
+    {% for link in linklists['main-menu'].links %}
+      {% if forloop.index == 4 %}
+        <a href="{{ link.url }}">
+        <div class="relative group" style="font-family: 'bodonibold!important';">
+          De
+          <svg xmlns="http://www.w3.org/2000/svg" width="21.046" height="32.03" viewBox="0 0 21.046 32.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161615;
+        font-size: 26.457px;
+        font-family: BodoniURW-Med, Bodoni URW;
+      }
+    </style>
+  </defs>
+  <text id="M" class="cls-1 no-bold" transform="matrix(1, 0.001, -0.001, 1, 0.011, 24)"><tspan x="0" y="0">M</tspan></text>
+</svg>        
+          <svg xmlns="http://www.w3.org/2000/svg" width="12.398" height="27.539" viewBox="0 0 12.398 27.539">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161615;
+        font-size: 23px;
+        font-family: BodoniURW-Reg, Bodoni URW;
+      }
+    </style>
+  </defs>
+  <text id="o" class="cls-1 no-bold" transform="translate(1.099 21.547) rotate(-3)"><tspan x="0" y="0">o</tspan></text>
+</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="10.777" height="23.635" viewBox="0 0 10.777 23.635">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161615;
+        font-size: 19.889px;
+        font-family: BodoniURW-Reg, Bodoni URW;
+      }
+    </style>
+  </defs>
+  <text id="a" class="cls-1 no-bold" transform="matrix(0.997, 0.078, -0.078, 0.997, 0.392, 17.944)"><tspan x="0" y="0">a</tspan></text>
+</svg>
+           <svg xmlns="http://www.w3.org/2000/svg" width="16.052" height="26.441" viewBox="0 0 16.052 26.441">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161615;
+        font-size: 19.889px;
+        font-family: BodoniURW-Bol, Bodoni URW;
+      }
+    </style>
+  </defs>
+  <text id="k" class="cls-1 no-bold" transform="matrix(0.992, -0.126, 0.126, 0.992, 2.272, 19.497)"><tspan x="0" y="0">k</tspan></text>
+</svg>      
+          <svg xmlns="http://www.w3.org/2000/svg" width="13.925" height="25.865" viewBox="0 0 13.925 25.865">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161615;
+        font-size: 19.889px;
+        font-family: BodoniURW-Bol, Bodoni URW;
+      }
+    </style>
+  </defs>
+  <text id="e" class="cls-1 no-bold" transform="matrix(0.997, 0.078, -0.078, 0.997, 0.549, 17.944)"><tspan x="0" y="0">e</tspan></text>
+</svg>       
+          <svg xmlns="http://www.w3.org/2000/svg" width="9.78" height="23.557" viewBox="0 0 9.78 23.557">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161615;
+        font-size: 19.889px;
+        font-family: BodoniURW-Reg, Bodoni URW;
+      }
+    </style>
+  </defs>
+  <text id="r" class="cls-1 no-bold" transform="matrix(0.997, 0.078, -0.078, 0.997, 0.392, 17.944)"><tspan x="0" y="0">r</tspan></text>
+</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="10.046" height="32.014" viewBox="0 0 10.046 32.014">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161615;
+        font-size: 26.457px;
+        font-family: BodoniURW-Med, Bodoni URW;
+      }
+    </style>
+  </defs>
+  <text id="s" class="cls-1 no-bold" transform="matrix(1, 0.001, -0.001, 1, 0.011, 24)"><tspan x="0" y="0">s</tspan></text>
+</svg>
+          Club
+        <div class="absolute lineheight-0 hidden group-hover:!block">
+         <svg xmlns="http://www.w3.org/2000/svg" width="161.484" height="3.964" viewBox="0 0 161.484 3.964">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161615;
+      }
+    </style>
+  </defs>
+  <path id="Path_134" data-name="Path 134" class="cls-1" d="M494.668,3.739q31.389.412,62.784.063,31.262-.351,62.507-1.466,17.687-.63,35.363-1.5c.551-.028.554-.858,0-.831Q623.97,1.549,592.585,2.336q-31.253.78-62.52.8-17.7.011-35.4-.224a.415.415,0,1,0,0,.83" transform="translate(-494.253 0.001)"/>
+</svg>
+        </div>
+      </div>
+  </a>
+      {% else %}
+      <div class="relative group" style="font-family: 'bodonibold!important';">
+        {{ link.title | link_to: link.url }}
+        <div class="absolute lineheight-0 hidden group-hover:!block">
+          {% if forloop.index==1 %}
+            <svg xmlns="http://www.w3.org/2000/svg" width="183.185" height="6.633" viewBox="0 0 183.185 6.633">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161615;
+      }
+    </style>
+  </defs>
+  <path id="Path_130" data-name="Path 130" class="cls-1" d="M443.287,348.811c.163-.3,1.581-.382,1.843-.422,1.217-.186,2.446-.3,3.672-.407,2.861-.251,5.73-.412,8.6-.582q9.059-.537,18.126-.923,18.189-.778,36.4-.994c24.431-.288,48.859.69,73.287.244a397.637,397.637,0,0,0,40.095-2.51c.524-.063.531-.894,0-.83-24.5,2.941-49.246,2.772-73.879,2.437-24.838-.338-49.649-.271-74.472.761q-10.362.432-20.714,1.054c-3.132.189-6.27.361-9.39.7a27.919,27.919,0,0,0-2.976.431c-.42.093-1.073.192-1.3.62-.255.47.462.889.717.419" transform="translate(-442.516 -342.383)"/>
+</svg>
+            {% elsif forloop.index==2 %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="210" height="2.397" viewBox="0 0 210 2.397">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161615;
+      }
+    </style>
+  </defs>
+  <path id="Path_131" data-name="Path 131" class="cls-1" d="M.446,6.235c27.175.376,54.356.281,81.532.013s54.358-.7,81.537-1.007q23.018-.255,46.039-.324a.416.416,0,1,0,0-.83c-27.182.051-54.361.408-81.539.77s-54.354.727-81.535.789Q23.462,5.7.446,5.405a.416.416,0,1,0,0,.83" transform="translate(0 -4.087)"/>
+</svg>
+    {% elsif forloop.index==3 %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="182.014" height="5.748" viewBox="0 0 182.014 5.748">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161615;
+      }
+    </style>
+  </defs>
+  <path id="Path_133" data-name="Path 133" class="cls-1" d="M364.5,4.711Q434.62,4.586,504.716,3.6,524.7,3.321,544.68,2.97c1.207-.021,1.211-.852,0-.831q-70.068,1.23-140.193,1.6-20,.105-39.989.14c-1.209,0-1.211.832,0,.83" transform="matrix(1, 0.017, -0.017, 1, -363.453, -8.484)"/>
+</svg>
+    {% elsif forloop.index==5 %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="82.509" height="2.56" viewBox="0 0 82.509 2.56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #161615;
+      }
+    </style>
+  </defs>
+  <path id="Path_132" data-name="Path 132" class="cls-1" d="M237.365,3.084q31.846-.663,63.691.617,8.976.363,17.943.882a.416.416,0,1,0,0-.83Q287.208,1.92,255.332,2.031q-8.986.033-17.967.223a.416.416,0,1,0,0,.83" transform="translate(-236.926 -2.024)"/>
+</svg>
+          {% endif %}
+        </div>
+      </div>
+        {% endif %}
+    {% endfor %}
+  </div>
+</section>
+<div class="md:h-[160px] h-[140px] !block"></div>
+{% schema %}
+  {
+    "name": "t-nav",
+    "settings": [
+ {
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "label": "t:sections.header.settings.menu.label"
+    },
+ {
+"type": "image_picker",
+"id": "img",
+"label": "Cart Image"
+},{
+"type": "image_picker",
+"id": "img2",
+"label": "Login Image"
+},{
+"type": "image_picker",
+"id": "img3",
+"label": "Logo Image"
+},{
+"type": "url",
+"id": "link3",
+"label": "Cart Link"
+}
+    ],
+"presets": [
+{
+"name": "t-nav"
+}
+]
+  }
+{% endschema %}
